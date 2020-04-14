@@ -1,0 +1,5 @@
+**/private_local_*
+dist/**
+es6/**
+node_modules/
+create-node-library
