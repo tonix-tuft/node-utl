@@ -56,7 +56,9 @@
     "url": "https://github.com/tonix-tuft/node-utl/issues"
   },
   "homepage": "https://github.com/tonix-tuft/node-utl#readme",
-  "dependencies": {},
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  },
   "files": [
     "dist",
     "src",
