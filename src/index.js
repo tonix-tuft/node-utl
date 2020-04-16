@@ -25,5 +25,6 @@
 
 import walkSync from "./walkSync";
 import isDirectorySync from "./isDirectorySync";
+import packagePath from "./packagePath";
 
-export { walkSync, isDirectorySync };
+export { walkSync, isDirectorySync, packagePath };
