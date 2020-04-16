@@ -23,7 +23,14 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-import walkSync from "./walkSync";
-import isDirectorySync from "./isDirectorySync";
+import { existsSync, lstatSync } from "fs";
 
-export { walkSync, isDirectorySync };
+/**
+ * Tests if a path is a valid directory.
+ *
+ * @param {string} dirPath The path to test.
+ * @return {boolean} True if the given path is a directory, false otherwise.
+ */
+export default function isDirectorySync(dirPath) {
+  return existsSync(dirPath) && lstatSync(dirPath).isDirectory();
+}
