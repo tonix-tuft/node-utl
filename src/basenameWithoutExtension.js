@@ -23,9 +23,14 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-import walkSync from "./walkSync";
-import isDirectorySync from "./isDirectorySync";
-import packagePath from "./packagePath";
-import basenameWithoutExtension from "./basenameWithoutExtension";
+import { basename, extname } from "path";
 
-export { walkSync, isDirectorySync, packagePath, basenameWithoutExtension };
+/**
+ * Returns the basename of a file path without the extension of the file.
+ *
+ * @param {string} filePath A file path.
+ * @return {string} The basename of the file without its extension.
+ */
+export default function basenameWithoutExtension(filePath) {
+  return basename(filePath, extname(filePath));
+}
