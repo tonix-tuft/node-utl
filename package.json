@@ -46,12 +46,12 @@
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.34.0",
     "eslint": "^6.8.0",
+    "lodash": "^4.17.19",
     "minimist": ">=1.2.3",
     "nodemon": "^2.0.4",
     "onchange": "^6.1.1",
     "serialize-javascript": "^2.1.2",
-    "typescript": "^3.9.7",
-    "lodash": ">=4.17.19"
+    "typescript": "^3.9.7"
   },
   "bugs": {
     "url": "https://github.com/tonix-tuft/node-utl/issues"
