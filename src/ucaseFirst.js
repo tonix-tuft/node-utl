@@ -23,16 +23,6 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-import walkSync from "./walkSync";
-import isDirectorySync from "./isDirectorySync";
-import packagePath from "./packagePath";
-import basenameWithoutExtension from "./basenameWithoutExtension";
-import ucaseFirst from "./ucaseFirst";
-
-export {
-  walkSync,
-  isDirectorySync,
-  packagePath,
-  basenameWithoutExtension,
-  ucaseFirst,
+module.exports = function ucaseFirst(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
 };
