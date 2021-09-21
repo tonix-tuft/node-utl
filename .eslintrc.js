@@ -35,13 +35,8 @@ module.exports = {
       },
     ],
     "comma-dangle": "off",
-    indent: [
-      "error",
-      2,
-      {
-        ignoredNodes: ["TemplateLiteral"],
-      },
-    ],
+    indent: "off",
+    "@typescript-eslint/indent": "off",
     "template-curly-spacing": ["off"],
   },
   overrides: [
